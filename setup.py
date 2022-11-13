@@ -15,8 +15,9 @@ def get_requirements()->List[str]:
 setup(
     name="sensor",
     version="0.0.1",
-    author="Abhishek",
+    author="Abhishek Seth",
     author_email="abhishek.mcent@gmail.com",
-    packages=find_packages(),
-    install_requires=[],
+    packages = find_packages(),
+    install_requires=get_requirements(),#["pymongo==4.2.0"],
 )
+
